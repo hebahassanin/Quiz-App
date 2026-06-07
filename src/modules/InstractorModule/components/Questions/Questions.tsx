@@ -3,7 +3,7 @@ import UpdateQuestionModal from "../QuestionModule/QuestionModule";
 import { useEffect, useState } from "react";
 import { axiosInstance } from "../../../../config/httpClient";
 import { toast } from "react-toastify";
-import { BeatLoader, ClipLoader } from "react-spinners";
+import { ClipLoader } from "react-spinners";
 import { QUESTION_URLS } from "../../../../config/api.endPoint";
 import type { Question } from "../../type";
 import CustomPagination from "../../../../shared/components/CustomPagination/CustomPagination";

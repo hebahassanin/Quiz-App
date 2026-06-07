@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 
 import profileImg from "../../../assets/images/Profile/profilePhoto.png"
+import type { RootState } from "../../../redux/store";
 
 
 export default function Profile() {

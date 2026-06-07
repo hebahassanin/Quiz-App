@@ -1,5 +1,5 @@
 import { Modal } from "flowbite-react";
-import InstructorInput from "../../../../../shared/components/ui/InstructorInput/InstructorInput";
+// import InstructorInput from "../../../../../shared/components/ui/InstructorInput/InstructorInput";
 import { FaRegCheckCircle } from "react-icons/fa";
 import { IoCopyOutline, IoCheckmarkDoneSharp } from "react-icons/io5"; // أيقونات أكثر عصرية
 import { useState } from "react";
