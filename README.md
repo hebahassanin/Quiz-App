@@ -1,6 +1,12 @@
 # Quiz Management System
 A role-based quiz management platform built with React that supports two user roles: Instructor and Student. The system enables instructors to create and manage quizzes, while students can join exams using access codes and track their results.
 
+## Live Demo
+🔗 Live Demo: https://quiz-app-psi-puce.vercel.app/
+
+## Repository
+🔗 GitHub Repository: https://github.com/hebahassanin/Quiz-App
+
 ## Demo Credentials
 
 ### Instructor Account
