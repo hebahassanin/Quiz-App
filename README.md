@@ -4,13 +4,13 @@ A role-based quiz management platform built with React that supports two user ro
 ## Demo Credentials
 
 ### Instructor Account
- Email: hebahassanin20@gmail.com
- Password: @1234Heba
+ - Email: hebahassanin20@gmail.com
+ - Password: @1234Heba
 
 ### Student Account
 You can create a new student account through the registration page or use the demo account below:
- Email: lilexeh912@devlug.com
- Password: @1234Heba
+ - Email: lilexeh912@devlug.com
+ - Password: @1234Heba
 
 ## Features
 ### Authentication & Authorization
