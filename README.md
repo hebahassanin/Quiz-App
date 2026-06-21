@@ -1,73 +1,48 @@
-# React + TypeScript + Vite
+# Quiz Management System
+A role-based quiz management platform built with React that supports two user roles: Instructor and Student. The system enables instructors to create and manage quizzes, while students can join exams using access codes and track their results.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Demo Credentials
 
-Currently, two official plugins are available:
+### Instructor Account
+ Email: hebahassanin20@gmail.com
+ Password: @1234Heba
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Student Account
+You can create a new student account through the registration page or use the demo account below:
+ Email: lilexeh912@devlug.com
+ Password: @1234Heba
 
-## React Compiler
+## Features
+### Authentication & Authorization
+ - User authentication and protected routes.
+ - Role-based access control for Instructor and Student.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Instructor Features
+ - Create and manage quizzes.
+ - Manage students and groups.
+ - Question bank management.
+ - Schedule timed exams.
+ - Generate access codes for students.
+ - View upcoming quizzes and top-performing students.
 
-## Expanding the ESLint configuration
+### Student Features
+ - View assigned quizzes.
+ - Join exams using access codes.
+ - Take timed quizzes and submit answers.
+ - View quiz results and performance history.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Technologies Used
+ - React.js
+ - TypeScript
+ - Tailwind css
+ - React Router DOM
+ - React Hook Form
+ - Redux ToolKit
+ - Axios
+ - REST APIs
+ - JWT Decode
+ - SweetAlert2
+ - React Toastify
+ - React Spinners
+ - React Icons
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
